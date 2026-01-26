@@ -57,7 +57,7 @@ await client.start()
 
 # Create session with model selection
 session = await client.create_session({
-    "model": "claude-sonnet-4.5",
+    "model": "gpt-5-mini",  # Free tier, performant
     "on_permission_request": auto_approve,
 })
 
@@ -81,7 +81,7 @@ await session.send({
 Sites are generated following 2026 design best practices:
 
 - **Bold typography** - Distinctive Google Fonts pairings (not generic Inter/Roboto)
-- **Real images** - Unsplash and Picsum for authentic photography
+- **Real images** - Picsum for authentic photography (with seeded URLs for consistency)
 - **Atmospheric backgrounds** - Gradients, textures, and depth
 - **Meaningful motion** - Staggered entrance animations, smooth hover states
 - **Mobile-first** - Responsive layouts, thumb-friendly interactions
@@ -98,7 +98,7 @@ Sites are generated following 2026 design best practices:
 
 - **Backend**: Python, FastAPI, GitHub Copilot SDK
 - **Frontend**: React, Vite
-- **AI**: GitHub Copilot SDK with Claude Sonnet 4.5
+- **AI**: GitHub Copilot SDK with GPT-5 mini (free tier)
 
 ## The Name
 
