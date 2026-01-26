@@ -1,0 +1,159 @@
+# Terraform state and sensitive files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfvars
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform/lambda.zip
+terraform/layers/*.zip
+terraform/layers/copilot-cli-layer/
+terraform
+
+# Environment files with secrets
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+# Secret and credential files
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.secret
+*.secrets
+secrets.json
+secrets.yaml
+secrets.yml
+credentials
+credentials.*
+*_credentials*
+*.credential
+.aws/
+.github_token
+github_token
+**/secret*
+!**/secrets.md
+
+# Local config overrides
+config.local.*
+*.local.json
+*.local.yaml
+*.local.yml
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Local dev artifacts
+.dev-pids
+/tmp/
+.tmp/
+
+# Build artifacts
+.build/
+
+# Local development containers
+Dockerfile
+docker-compose.yml
+docker-compose*.yml
+Makefile
+
+# Frontend - not relevant to SDK competition, just a standard React UI
+frontend/
+
+# Backend artifacts
+backend/__pycache__/
+backend/*.pyc
+backend/.venv/
+backend/venv/
+backend/*.egg-info/
+backend/cloud_persistence.py
+backend/cloud_handler.py
+backend/deploy.py
+backend/requirements-cloud.txt
+
+# Deployment and local scripts 
+deploy.sh
+start-local.sh
+stop.sh
+TRD*.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+.claude
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
