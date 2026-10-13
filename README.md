@@ -1,4 +1,4 @@
-#hlyther Copilot App Factory
+##hlyther Copilot App Factory
 
 **AI-powered static site generator using GitHub Copilot SDK**
 
